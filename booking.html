@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+
+    <!-- custom CSS file link -->
+    <link rel="stylesheet" href="./assets/css/Travel & Tour.css" />
+
+    <!-- custom font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom swiper css cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section start -->
+    <section class="header">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.webp" alt="" />Travel Islamabad
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="package.html">Package</a>
+        <a href="booking.html">Booking</a>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- header section end -->
+
+    <div
+      class="heading"
+      style="background: url(./assets/images/header-bg-3.jpg) no-repeat"
+    >
+      <h1>Booking</h1>
+    </div>
+
+    <!-- booking section start -->
+    <section class="booking">
+      <h1 class="heading-title">Book Your Trip!</h1>
+      <form action="book_form.html" method="POST" class="book-form">
+        <div class="flex">
+          <div class="inputBox">
+            <span>Name</span>
+            <input
+              type="text"
+              name="name"
+              id=""
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="inputBox">
+            <span>Email</span>
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="Enter Your Email"
+            />
+          </div>
+          <div class="inputBox">
+            <span>Contact Number</span>
+            <input
+              type="number"
+              name="phone"
+              id=""
+              placeholder="Enter Your Phone Number"
+            />
+          </div>
+          <div class="inputBox">
+            <span>Address</span>
+            <input
+              type="text"
+              name="address"
+              id=""
+              placeholder="Enter Your Address"
+            />
+          </div>
+          <div class="inputBox">
+            <span>Where to :</span>
+            <input
+              type="text"
+              name="location"
+              id=""
+              placeholder="Place you want to Visit"
+            />
+          </div>
+          <div class="inputBox">
+            <span>How many :</span>
+            <input
+              type="number"
+              name="guests"
+              id=""
+              placeholder="Number of Guests"
+            />
+          </div>
+          <div class="inputBox">
+            <span>Arrivals :</span>
+            <input type="date" name="arrivals" id="" />
+          </div>
+          <div class="inputBox">
+            <span>Leaving :</span>
+            <input type="date" name="leaving" id="" />
+          </div>
+        </div>
+        <div class="formBtn">
+          <input type="submit" value="submit" class="btn" name="submit" />
+          <input type="reset" value="reset" class="btn" />
+        </div>
+      </form>
+    </section>
+    <!-- booking section end -->
+
+    <!-- footer Section start -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="index.html"><i class="fa-solid fa-angles-right"></i>Home</a>
+          <a href="about.html"><i class="fa-solid fa-angles-right"></i>About</a>
+          <a href="package.html"
+            ><i class="fa-solid fa-angles-right"></i>Package</a
+          >
+          <a href="booking.html"
+            ><i class="fa-solid fa-angles-right"></i>Booking</a
+          >
+        </div>
+        <div class="box">
+          <h3>Extra Links</h3>
+          <a href="#"><i class="fa-solid fa-angles-right"></i>Ask Quesions</a>
+          <a href="#"><i class="fa-solid fa-angles-right"></i>About Us</a>
+          <a href="#"><i class="fa-solid fa-angles-right"></i>Privacy Ploicy</a>
+          <a href="#"><i class="fa-solid fa-angles-right"></i>Terms of Use</a>
+        </div>
+        <div class="box">
+          <h3>Contat Info</h3>
+          <a href="#"><i class="fa-solid fa-phone"></i> +92-3012345678</a>
+          <a href="#"><i class="fa-solid fa-phone"></i> +92-3087654321</a>
+          <a href="#"
+            ><i class="fa-solid fa-envelope"></i> travels@islamabad.com</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-location-dot"></i> Islamabad, Pakistan -
+            44000</a
+          >
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i> Twitter</a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+          <a href="#"
+            ><i class="fa-brands fa-square-instagram"></i> Instagram</a
+          >
+        </div>
+      </div>
+
+      <div class="credit">
+        Created By <span>Asif Nawaz</span>
+        <i class="fa-regular fa-copyright"></i> Travels and Tour 2024 | All
+        rights reserved!
+      </div>
+    </section>
+    <!-- footer Section end -->
+
+    <!-- custom javascript file link -->
+    <script src="./assets/js/Travel & Tour.js"></script>
+
+    <!-- custom swiper javascript cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+ <?php
+
+
+// Connect to the Database 
+$servername="localhost";
+$username="root";
+$password="";
+$database="tripbooking_db";
+
+// Create connection
+$conn= mysqli_connect($servername, $username, $password, $database);
+
+// Die if connection was not successful
+    if(!$conn){
+        die("Sorry! We failed to connect" . mysqli_connect_error());
+    }
+
+if(isset($_POST['submit'])){
+    $name= $_POST['name'];
+    $email= $_POST['email'];
+    $phone= $_POST['phone'];
+    $address= $_POST['address'];
+    $location= $_POST['location'];
+    $guests= $_POST['guests'];
+    $arrivals= $_POST['arrivals'];
+    $leaving= $_POST['leaving'];
+
+    // Sql query to be executed for Insertion/Sending information/request
+    $sql= "INSERT INTO `book_form` ( `name`, `email`, `phone`, `address`, `location`, `guests`, `arrivals`, `leaving`) 
+                   VALUES ( '$name', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving')";
+
+    $result = mysqli_query($conn, $sql);
+    if($result){ 
+        header("location: booking.html");
+    }
+    else{
+        echo "The Note was not inserted successfully because of this error ---> ". mysqli_error($conn);
+    } 
+ }
+?>
